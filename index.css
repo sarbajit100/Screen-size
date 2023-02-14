@@ -1,0 +1,79 @@
+body{
+    /* display: flex;
+    flex-direction: row; */
+    
+}
+.box{
+    
+    /* text-align: center;
+    font-size: 80px; */
+    display: inline-block;
+    
+}
+
+
+
+@media screen and (min-width:1024px) {
+    .box1{
+        background-color: #ced75a;
+        text-align: center;
+        font-size: 80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+        width: 50%;
+        
+    }
+    .box1::after{
+        content: 'large size: 1440px'
+    }
+    
+    
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+    .box2{
+        background-color: #df3434;
+        text-align: center;
+        font-size: 80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+        width: 50%;
+    }
+    .box2::after{
+        content: 'normal size: 1024px'
+    }
+}
+@media screen and (min-width:425px) and (max-width:768px){
+    .box3{
+        background-color: #916bdb;
+        text-align: center;
+        font-size: 80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+        width: 50%;
+    }
+    .box3::after{
+        content: 'tablet size: 768px'
+    }
+}
+@media screen and (max-width:425px){
+    .box4{
+        background-color: #5ec989;
+        text-align: center;
+        font-size: 80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+        width: 50%;
+    }
+    .box4::after{
+        content: 'mobile size: 425px'
+    }
+    
+}
